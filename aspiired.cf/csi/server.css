@@ -1,0 +1,63 @@
+@import url('//db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft');
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 40px;
+    background: rgb(0,255,235);
+    background: linear-gradient(300deg, rgba(0,255,235,1) 0%, rgba(48,101,179,1) 100%);
+    width: 100%;
+}   
+#navicon {
+    padding-left: 15px;
+    color: #fff;
+}
+@font-face {
+    font-family: "Minecraft"; 
+    src: url("//db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.eot"); 
+    src: url("//db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.woff") format("woff"), url("//db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.svg#Minecraft") format("svg"); 
+}
+html {
+    background: #777676;
+    font-family: 'Minecraftia';
+}
+.server {
+    display: inline-block;
+}
+.server:hover {
+    background: #555;
+}
+li {
+    list-style: none;
+}
+.server {
+    line-height: 0px;
+}
+#title {    
+    display: flex;
+    position: relative;
+}
+#versionId {
+    position: relative;
+    display: flex;
+}
+#onlineP {
+    position: relative;
+    display: flex;
+}
+#motd {
+    position: relative;
+    display: flex;
+}
+#name {
+    position: relative;
+    display: flex;
+}
+#servername {
+    position: relative;
+    display: flex;
+}
