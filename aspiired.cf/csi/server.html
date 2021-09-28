@@ -61,7 +61,9 @@
 document.getElementById('submitInput').value = "Warzone"
 
     setInterval(() => {
-    fetch(`https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/server/${document.getElementById('submitInput').value}`).then(res => res.json())
+    fetch(`https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/server/${document.getElementById('submitInput').value}`, {
+        mode: 'cors'
+    }).then(res => res.json())
     .then(json => {
         document.getElementById('owner').innerHTML = `${json.server.owner_name}`
         document.getElementById('nameE').innerHTML = `${json.server.name}`
