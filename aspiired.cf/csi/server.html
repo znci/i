@@ -62,7 +62,7 @@ document.getElementById('submitInput').value = "Warzone"
 
     setInterval(() => {
     fetch(`https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/server/${document.getElementById('submitInput').value}`, {
-        mode: 'cors'
+        mode: 'no-cors'
     }).then(res => res.json())
     .then(json => {
         document.getElementById('owner').innerHTML = `${json.server.owner_name}`
