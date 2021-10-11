@@ -1,0 +1,22 @@
+{
+    "accounts": [
+        {
+            "email": "22joshgeorge22@gmail.com",
+            "password": "174013me",
+            "username": "22josh22",
+            "uuid": "f805d832-4d77-41b0-a0c1-25bd9f6eb2c1"
+        },
+        {
+            "email": "mothytee2@gmail.com",
+            "password": "Wtfninja17!",
+            "username": "2danimeboy",
+            "uuid": "da325901-e9e8-453a-bdb8-d019acc05645"
+        },
+        {
+            "email": "magicaljogg2000@gmail.com",
+            "password": "George2014",
+            "username": "Talisi",
+            "uuid": "5265987f-f234-43ed-a81c-0634e78db47c"
+        }
+    ]
+}
