@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Info</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+Mono:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+        html {
+            background-color: #1e1e1e;
+            color: #fff;
+            
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(14, 111, 223);
+        }
+        .memeStat {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        #memeImage {
+            border-radius: 20px;
+            user-select: none;
+        }
+        #padding {
+            padding-left: 15px;
+            font-family: 'Asap', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>
+            <p id="memeTitle" class="memeStat"></p>
+            <p id="memeUpvotes" class="memeStat"></p>
+            <p id="memeAuthor" class="memeStat"></p>
+            <img src="" alt="" id="memeImage" class="memeStat">
+        </h1>
+    </center>
+</body>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+
+        const memeLink = urlParams.get('link')
+        const memeTitle = urlParams.get('title')
+        const memeUpvotes = urlParams.get('upvotes')
+        const memeAuthor = urlParams.get('author')
+        const memeImage = urlParams.get('image')
+
+        document.getElementById('memeTitle').innerHTML = `<b>Title</b> <p id="padding"><a href="${memeLink}">${memeTitle}</a></p>`
+        document.getElementById('memeUpvotes').innerHTML = `<b>Upvotes</b> <p id="padding">${memeUpvotes}</p>`
+        document.getElementById('memeAuthor').innerHTML = `<b>Author</b> <p id="padding">${memeAuthor}</p>`
+        document.getElementById('memeImage').src = memeImage
+
+    </script>
+</html>
