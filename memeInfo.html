@@ -8,6 +8,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+Mono:wght@300&family=Roboto:ital,wght@1,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
         html {
             background-color: #1e1e1e;
             color: #fff;
@@ -34,6 +39,25 @@
             padding-left: 15px;
             font-family: 'Asap', sans-serif;
         }
+        .how {
+            font-family: "Roboto", sans-serif;
+            padding-top: 100px;
+        }
+        #possible {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        landmark {
+            font-family: 'Inconsolata', monospace;
+            background-color: #121212;
+            padding: 2px;
+            border-radius: 5px;
+            outline: solid 3px #1a1a1a;
+        }
+        #possible {
+            font-size: 20px;
+            padding-top: 9px;
+            max-width: 500px;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +68,12 @@
             <p id="memeAuthor" class="memeStat"></p>
             <img src="" alt="" id="memeImage" class="memeStat">
         </h1>
+    </center>
+    <center>
+        <div class="how">
+            <h1>How does it work?</h1>
+            <h5 id="possible">This was made possible by JavaScript. The way this works is by scanning the URL for landmarks like <landmark>link</landmark> <landmark>title</landmark> <landmark>upvotes</landmark> <landmark>author</landmark> and <landmark>image</landmark> it then throws the data into specific IDs that displays it to you!</h5>
+        </div>
     </center>
 </body>
     <script>
