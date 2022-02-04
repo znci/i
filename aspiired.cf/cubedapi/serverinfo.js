@@ -1,10 +1,10 @@
-fetch("https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers").then(res => res.json())
+fetch("https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers", {credentials: 'same-origin'}).then(res => res.json())
 .then(json => {
     let collection = []
     var servers = json.servers
     for (const server of servers) {
         if (server.name !== "lobby" && server.name !== "lobby2") {
-            collection.push(`***${server.name}***\n - **Players** (${server.onlinePlayers}/${server.maxPlayers}) ${server.players.join(", ")}\n - **Boosters** ${server.boosters}\n - **MOTD** ${server.motd}\n - **Version** ${server.version}\n`)
+           
 						
 						var node = document.createElement('div')
 						node.insertAdjacentHTML("beforeend", `<div class="server">
