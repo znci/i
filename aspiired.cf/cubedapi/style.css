@@ -1,0 +1,40 @@
+@font-face {
+	font-family: Panton; 
+	src: url("../panton.black-caps.otf")
+}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.server {
+	text-align: left;
+	background-color: #003366c0;
+	width: 600px;
+	margin-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 20px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.server #title {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: clamp(1rem, 2vw, 2rem);
+	font-family: "Panton",sans-serif;
+	text-shadow: 0px 3px 0px rgba(0,0,0,0.25);
+}
+
+#panton {
+	font-family: "Panton",sans-serif;
+	text-shadow: 0px 3px 0px rgba(0,0,0,0.25);
+	color: #fff;
+	font-size: 1.2rem;
+}
