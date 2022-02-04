@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Panton; 
-	src: url("../panton.black-caps.otf")
+	src: url("./panton.black-caps.otf")
 }
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
