@@ -1,4 +1,4 @@
-fetch("https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers", {credentials: 'same-origin'}).then(res => res.json())
+fetch("https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers", {mode: 'cors'}).then(res => res.json())
 .then(json => {
     let collection = []
     var servers = json.servers
