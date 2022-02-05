@@ -1,5 +1,11 @@
 
-$.ajax({url: "https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers", success: function(json){
+
+
+$.ajax({url: "https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers", 
+headers: {
+		"accept": "application/json",
+		"Access-Control-Allow-Origin":"*"
+}, success: function(json){
 	var servers = json.servers
 	for (const server of servers) {
 			if (server.name !== "lobby" && server.name !== "lobby2") {
