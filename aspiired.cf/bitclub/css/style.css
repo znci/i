@@ -1,0 +1,131 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+.navbar {
+    border-bottom: 2px #777 solid;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    text-align: center;
+}
+.navbar .title {
+    border-right: 2px #777 solid;
+    padding-right: 20px;
+    margin-right: 10px;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#4BC0C8, #C779D0, #FEAC5E);
+    font-weight: 900;			
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar .fas{
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    background: -webkit-linear-gradient(#4BC0C8, #C779D0, #FEAC5E);
+    font-weight: 900;			
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.post {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 24rem;
+    height: 600px;
+    border-radius: 30px;
+    border: 2px #777 solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.post .posterInfo {
+    display: flex;
+}
+.post .posterInfo .commenterImage {
+    border-radius: 50%;
+    display: flex;
+    height: 48px;
+    width:48px;
+    margin-left: 10px;
+}
+.post .posterInfo .commenter {
+    display: flex;
+    line-height: 50px;
+}
+.post .postText .text {
+    margin-left: 30px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.post .feeling {
+    display: flex;
+    line-height: 50px;
+    padding-left: 3px;
+}
+
+.post .feeling {
+    display: flex;
+    background: -webkit-linear-gradient(#4BC0C8, #C779D0, #FEAC5E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    height: 200px;
+    font-size: 2rem;
+}
+
+footer .title #title {
+    margin-left: 15px;
+    background: -webkit-linear-gradient(#4BC0C8, #C779D0, #FEAC5E);
+    font-weight: 900;			
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+
+footer .title #copy, footer .title #associated, footer .title #love {
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+footer .title #love a {
+    color: #fe5e5e
+}
+
+footer .links {
+    position: absolute;
+    left: 30%;
+}
+
+footer .links a {
+    margin-left: 15px;
+    display: flex;
+    font-size: 1.25rem;
+    color: #fe5e5e;
+    text-align: center;
+}
+
+footer .icon {
+    background: -webkit-linear-gradient(#4BC0C8, #C779D0, #FEAC5E);
+    font-weight: 900;			
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
