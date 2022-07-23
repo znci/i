@@ -1,5 +1,3 @@
-# web development stuff
+# znci's old stuff
 
-Essentially a web development playground.
-
-*(and @zNotChill file repository I guess)
+We used to make stuff here. Sometimes we actually do.
